@@ -67,10 +67,7 @@ function getStringFromTemplate(firstName, lastName) {
  */
 function extractNameFromTemplate(value) {
   const name = value.split(' ').slice(-2);
-  name.forEach((i) => {
-    i.replace('!', '');
-  });
-  return name.join(' ');
+  return `${name[0]} ${name[1].replace('!', '')}`;
 }
 
 
@@ -84,8 +81,8 @@ function extractNameFromTemplate(value) {
  *   'John Doe'  => 'J'
  *   'cat'       => 'c'
  */
-function getFirstChar(/* value */) {
-  throw new Error('Not implemented');
+function getFirstChar(value) {
+  return value.slice(0, 1);
 }
 
 /**
