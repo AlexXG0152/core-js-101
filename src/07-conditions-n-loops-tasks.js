@@ -26,11 +26,11 @@
  *  21 => 'Fizz'
  *
  */
-function getFizzBuzz(n) {
-  if (!(n % 15)) return 'FizzBuzz';
-  if (!(n % 3)) return 'Fizz';
-  if (!(n % 5)) return 'Buzz';
-  return n;
+function getFizzBuzz(number) {
+  if (!(number % 15)) return 'FizzBuzz';
+  if (!(number % 3)) return 'Fizz';
+  if (!(number % 5)) return 'Buzz';
+  return number;
 }
 
 /**
@@ -63,8 +63,8 @@ function getFactorial(num) {
  *   5,10  =>  45 ( = 5+6+7+8+9+10 )
  *   -1,1  =>  0  ( = -1 + 0 + 1 )
  */
-function getSumBetweenNumbers(n1, n2) {
-  return ((n1 + n2) * (n2 - n1 + 1)) / 2;
+function getSumBetweenNumbers(start, end) {
+  return (start + end) * (end - start + 1) * 0.5;
 }
 
 /**
